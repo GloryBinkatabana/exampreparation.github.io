@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg);
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;      /**So that the button scan sit on the same line instead of ussing padding**/
+    align-items: center;/**This Horizontally aligns the items in the center**/
+    justify-content: space-between;/**Puts a space between both objects being pic and buttons**/
+    padding: 10px 0;
+}
+.logo{
+    cursor: pointer;/**literally change the cursor to a pointer when you hover over it**/
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background:rgb(255, 0, 0) ;
+    color: white;
+    padding: 7px 20px;/**top&bottom then left&right**/
+    border-radius: 4px;
+    margin-left: 10px;/**To put space between both buttons**/
+    cursor: pointer;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    margin-top: 10px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-signup{
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-signup button{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: white;
+    padding:15px 30px ;
+    font-size: 16px;
+    cursor: pointer;
+}
+.features{
+    padding: 50px 12px;
+    font-size: 22px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: solid rgb(113, 112, 112) 2px;
+}
+.textcol{
+    margin: 15%;
+}
+.img-col{
+    margin: 10px;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 13px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+footer ul li{
+    display: inline-flex;
+    width: 120px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+.submenu{
+    display: none;
+}
+footer ul li:hover{
+    background: red;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+footer ul li:hover .submenu{
+    display: block;
+  position: absolute;
+  background: rgba(144, 240, 182, 0.842);
+  margin-top: 15px;
+  margin-left:- 15px ;
+}
+footer ul li:hover .submenu ul{
+    display: block;
+    margin: 10px;
+    color: #000;
+}

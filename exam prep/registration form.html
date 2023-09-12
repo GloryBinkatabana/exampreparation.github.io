@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regform.css">
+</head>
+<body>
+    <header >
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Content</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Form</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <div class="gridz">
+            <div class="grid-sub">
+
+            <div class="pics">
+                <img src="tim-van-der-kuip-CPs2X8JYmS8-unsplash.jpg" width="100%" height="100%">
+            </div>
+
+            <div class="content" >
+                <p>
+                    Lorem, ipsum dolor amet consectetur adipisicing elit. Mollitia facere placeat ad, molestiae ut laborum. Officia <mark>quisquam alias</mark> magnam commodi! Quidem laboriosam officiis mollitia fugit voluptas aperiam, sit cumque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit.<em>Ipsum adipisci, animi, nesciunt unde eius odio amet nemo</em> nisi ducimus cumque aperiam ullam odit corporis sed id<sup style="color: rgb(255, 13, 0);"> magnam</sup> quaerat quibusdam inventore? 
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem adipisci blanditiis illo non? Perferendis, officia <sub style="color: rgb(255, 13, 0);">vero</sub> nam ab recusandae eum reiciendis ex eaque saepe  modi delectus excepturi accusamus laboriosam?<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odio expedita obcaecati nesciunt ipsum, autem porro delectus ducimus. Placeat mollitia at blanditiis expedita deserunt reiciendis earum ullam veritatis, soluta enim?
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-sub">
+
+            <div class="pics">
+                <img src="dyk.jpg" style="grid-column: 1/4;"width="100%" height="100%" >
+            </div>
+
+            <div class="content">
+                <p style="font-style: oblique;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere placeat ad, molestiae ut laborum. Officia quisquam alias magnam commodi! Quidem laboriosam officiis mollitia fugit voluptas aperiam, sit cumque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum adipisci, animi, nesciunt unde eius odio amet nemo nisi ducimus cumque aperiam ullam odit corporis sed id magnam quaerat quibusdam inventore?
+                </p>
+
+                <p style="text-transform: capitalize;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius quae quisquam natus, eveniet laboriosam. Accusantium animi pariatur, saepe maxime iure aliquam a porro ab fugiat! Non dolorem ab debitis.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-sub">
+
+            <div class="pics">
+                <img src="settings.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="content">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere placeat ad, molestiae ut laborum. Officia quisquam alias magnam commodi! Quidem laboriosam officiis mollitia fugit voluptas aperiam, sit cumque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum adipisci, animi, nesciunt unde eius odio amet nemo nisi ducimus cumque aperiam ullam odit corporis sed id magnam quaerat quibusdam inventore?
+                </p>
+            
+            </div>
+        </div>
+
+        </div>
+
+        <section> 
+            
+            <form>
+                <Center><h1>Registration</h1></Center>
+                
+                
+                <label for="fname">Full Name</label><br>
+                <input type="text" name="Full-Name" id="fname" placeholder="Enter your name" required><br>
+
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required><br>
+
+                <label for="phone-number">Phone Number</label><br>
+                <input type="number" name="phone-number" id="phone-number" placeholder="Enter your phone-number" required><br>
+                
+                <label for="Email">Email</label><br>
+                <input type="email" name="Email" id="Email" placeholder="Enter your Email" required><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required><br>
+
+                <label for="Confirm-password">Confirm password</label><br>
+                <input type="password" name="Confirm-password" id="Confirm-password" placeholder="Confirm your password" required><br>
+
+                <label for="Gender">Gender</label><br>
+                <select id="Gender">
+                    <option>Please selcet your gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+
+                </select><br><br>
+                <section class="roles">
+                <label for="role">Role</label><br>
+                <input type="radio" name="role" id="role">
+                <label id="rowl">Student</label>
+                <input type="radio" name="role" id="role">
+                <label id="rowl">Teacher</label>
+            
+                </section>
+                
+                
+
+
+                <br>
+                <center><button type="submit">Register</button></center>
+                
+
+
+                
+            </form>
+
+        </section>
+
+    </main>
+   
+
+  
+</body>
+</html>
